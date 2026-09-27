@@ -99,6 +99,13 @@ def display_weather():
             "Please enter a city name."
         )
         return
+        city_result.config(text="--")
+        temperature_result.config(text="--")
+        feels_result.config(text="--")
+        humidity_result.config(text="--")
+        pressure_result.config(text="--")
+        wind_result.config(text="--")
+        description_result.config(text="--")
 
     try:
         location = get_location(city)
